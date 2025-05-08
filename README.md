@@ -1,2 +1,42 @@
-# ASEEquipmentEngineerQuiz
-ASEEquipmentEngineerQuiz base on fundamental frontend : html / css /js 
+
+<a href="https://alfo0924.github.io/ASEEquipmentEngineerQuiz/"> ASEEquipmentEngineer Quiz </a>
+# ASE Equipment Engineer Quiz 網站特點與優點
+
+## 網站特點
+
+- **扁平化設計**：採用現代簡潔的扁平化設計風格，視覺清晰[1][4]
+- **全面的知識覆蓋**：測驗內容涵蓋設備工程師需要的機械知識、工作職責和面試與工作環境等多個領域[1][2][5]
+- **即時反饋機制**：答題後立即顯示正確答案和解釋，幫助用戶理解錯誤原因[1]
+- **分類分析**：根據不同知識領域（機械知識、工作職責、面試與工作環境）分析用戶的強項和弱項[1][2]
+- **一頁式設計**：所有題目在同一頁面展示，無需點擊下一題，提高使用便利性
+
+## 程式碼運用邏輯
+
+### HTML 結構
+
+HTML 代碼採用語義化標籤，清晰地劃分了頁面結構：
+- `header` 區域顯示網站標題
+- 每個問題使用獨立的 `div.question-container` 包裝
+- 選項使用 `input[type="radio"]` 實現單選功能
+- 反饋區域 `div.feedback` 用於顯示答案解釋
+
+### CSS 設計邏輯
+
+CSS 代碼實現了響應式和用戶友好的界面：
+- 使用柔和的配色方案，主色調為藍色系
+- 卡片式設計增強內容區塊感
+- 使用 `box-shadow` 和 `border-radius` 增加現代感
+- 正確/錯誤反饋使用不同顏色（綠/紅）直觀區分
+- 分類分析結果使用顏色編碼（強/中/弱）
+
+### JavaScript 功能實現
+
+JavaScript 實現了網站的核心功能：
+- 使用事件監聽器 `addEventListener` 處理表單提交
+- 通過對象 `correctAnswers` 存儲正確答案
+- 使用 `explanations` 對象存儲每題的解釋文本
+- 實現答題評分和反饋顯示邏輯
+- 根據 `categories` 對象將題目分類，計算各類別得分
+- 根據得分百分比判斷用戶在各領域的掌握程度
+
+這個測驗網站特別適合日月光新進設備工程師，幫助他們了解工作內容、面試準備和基本機械知識，與實際日月光設備工程師的工作職責和面試流程高度相關[1][2][5]。
