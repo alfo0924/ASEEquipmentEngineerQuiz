@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>日月光設備工程師知識測驗</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <header>
+        <h1>日月光設備工程師知識測驗</h1>
+        <p>測試您對設備工程師基礎知識的掌握程度</p>
+    </header>
+
+    <div id="score-display" class="hidden">
+        <div class="score-container">
+            <h2>您的得分：<span id="final-score">0</span> / 10</h2>
+            <div id="analysis"></div>
+        </div>
+    </div>
+
+    <div id="quiz-container">
+        <form id="quiz-form">
+            <div class="question-container" id="q1">
+                <h3>1. 半導體機台的維修工作主要包括哪些內容？</h3>
+                <div class="options">
+                    <div class="option">
+                        <input type="radio" id="q1a" name="q1" value="a">
+                        <label for="q1a">只負責機台的軟體更新</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="q1b" name="q1" value="b">
+                        <label for="q1b">機台的維修、維護、保養、故障排除</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="q1c" name="q1" value="c">
+                        <label for="q1c">僅負責生產良率分析</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="q1d" name="q1" value="d">
+                        <label for="q1d">只負責機台的安裝</label>
+                    </div>
+                </div>
+                <div class="feedback" id="feedback-q1"></div>
+            </div>
+
+            <div class="question-container" id="q2">
+                <h3>2. 日月光設備工程師的輪班制度通常為何？</h3>
+                <div class="options">
+                    <div class="option">
+                        <input type="radio" id="q2a" name="q2" value="a">
+                        <label for="q2a">固定日班，不需輪班</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="q2b" name="q2" value="b">
+                        <label for="q2b">日夜輪班，約2-3個月輪一次</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="q2c" name="q2" value="c">
+                        <label for="q2c">三班制，每週輪換</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="q2d" name="q2" value="d">
+                        <label for="q2d">固定夜班</label>
+                    </div>
+                </div>
+                <div class="feedback" id="feedback-q2"></div>
+            </div>
+
+            <div class="question-container" id="q3">
+                <h3>3. 機械元件中，哪一項不屬於常見的連接件？</h3>
+                <div class="options">
+                    <div class="option">
+                        <input type="radio" id="q3a" name="q3" value="a">
+                        <label for="q3a">螺栓</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="q3b" name="q3" value="b">
+                        <label for="q3b">銷</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="q3c" name="q3" value="c">
+                        <label for="q3c">凸輪</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="q3d" name="q3" value="d">
+                        <label for="q3d">鍵</label>
+                    </div>
+                </div>
+                <div class="feedback" id="feedback-q3"></div>
+            </div>
+
+            <div class="question-container" id="q4">
+                <h3>4. 半導體設備工程師需要具備哪些基本技能？</h3>
+                <div class="options">
+                    <div class="option">
+                        <input type="radio" id="q4a" name="q4" value="a">
+                        <label for="q4a">僅需要軟體編程能力</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="q4b" name="q4" value="b">
+                        <label for="q4b">機械、電子、自動化等綜合知識</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="q4c" name="q4" value="c">
+                        <label for="q4c">只需要機械知識</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="q4d" name="q4" value="d">
+                        <label for="q4d">主要是市場營銷知識</label>
+                    </div>
+                </div>
+                <div class="feedback" id="feedback-q4"></div>
+            </div>
+
+            <div class="question-container" id="q5">
+                <h3>5. 以下哪一項不是日月光面試過程中常見的問題？</h3>
+                <div class="options">
+                    <div class="option">
+                        <input type="radio" id="q5a" name="q5" value="a">
+                        <label for="q5a">你遇到的挫折感</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="q5b" name="q5" value="b">
+                        <label for="q5b">能不能接受輪班</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="q5c" name="q5" value="c">
+                        <label for="q5c">你的投資理財計劃</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="q5d" name="q5" value="d">
+                        <label for="q5d">為什麼想來我們公司</label>
+                    </div>
+                </div>
+                <div class="feedback" id="feedback-q5"></div>
+            </div>
+
+            <div class="question-container" id="q6">
+                <h3>6. 日月光設備工程師面試流程通常包含哪些環節？</h3>
+                <div class="options">
+                    <div class="option">
+                        <input type="radio" id="q6a" name="q6" value="a">
+                        <label for="q6a">只有人資面試</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="q6b" name="q6" value="b">
+                        <label for="q6b">筆試、主管面試、人資面試</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="q6c" name="q6" value="c">
+                        <label for="q6c">只有技術測試</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="q6d" name="q6" value="d">
+                        <label for="q6d">小組討論、團隊合作測試</label>
+                    </div>
+                </div>
+                <div class="feedback" id="feedback-q6"></div>
+            </div>
+
+            <div class="question-container" id="q7">
+                <h3>7. 下列哪一項不是切削加工設備？</h3>
+                <div class="options">
+                    <div class="option">
+                        <input type="radio" id="q7a" name="q7" value="a">
+                        <label for="q7a">車床</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="q7b" name="q7" value="b">
+                        <label for="q7b">銑床</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="q7c" name="q7" value="c">
+                        <label for="q7c">鍛造機</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="q7d" name="q7" value="d">
+                        <label for="q7d">磨床</label>
+                    </div>
+                </div>
+                <div class="feedback" id="feedback-q7"></div>
+            </div>
+
+            <div class="question-container" id="q8">
+                <h3>8. 日月光新進設備工程師的培訓通常包括什麼？</h3>
+                <div class="options">
+                    <div class="option">
+                        <input type="radio" id="q8a" name="q8" value="a">
+                        <label for="q8a">沒有培訓，直接上線工作</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="q8b" name="q8" value="b">
+                        <label for="q8b">完整的職前訓練，包括理論和實務操作</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="q8c" name="q8" value="c">
+                        <label for="q8c">只有簡短的公司介紹</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="q8d" name="q8" value="d">
+                        <label for="q8d">僅提供書面資料自學</label>
+                    </div>
+                </div>
+                <div class="feedback" id="feedback-q8"></div>
+            </div>
+
+            <div class="question-container" id="q9">
+                <h3>9. 機械運動原理（機動學）主要研究什麼？</h3>
+                <div class="options">
+                    <div class="option">
+                        <input type="radio" id="q9a" name="q9" value="a">
+                        <label for="q9a">只研究機械的靜態結構</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="q9b" name="q9" value="b">
+                        <label for="q9b">機械的路徑、速度、加速度等運動特性</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="q9c" name="q9" value="c">
+                        <label for="q9c">僅研究機械的材料特性</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="q9d" name="q9" value="d">
+                        <label for="q9d">只研究機械的能量消耗</label>
+                    </div>
+                </div>
+                <div class="feedback" id="feedback-q9"></div>
+            </div>
+
+            <div class="question-container" id="q10">
+                <h3>10. 自動化工程師證照考試中，機械工程概論包括哪些知識？</h3>
+                <div class="options">
+                    <div class="option">
+                        <input type="radio" id="q10a" name="q10" value="a">
+                        <label for="q10a">只包含電子電路知識</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="q10b" name="q10" value="b">
+                        <label for="q10b">機械元件、機構原理、力學分析等</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="q10c" name="q10" value="c">
+                        <label for="q10c">只包含程式設計</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="q10d" name="q10" value="d">
+                        <label for="q10d">僅包含市場營銷知識</label>
+                    </div>
+                </div>
+                <div class="feedback" id="feedback-q10"></div>
+            </div>
+
+            <div class="submit-container">
+                <button type="submit" id="submit-btn">提交答案</button>
+            </div>
+        </form>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
